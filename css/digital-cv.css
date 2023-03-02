@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  margin-bottom: 12px;
+}
+p {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 100px auto;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background-color: #1c7ed6;
+  box-shadow: 0px 0px 12px #444444;
+}
+.col {
+  background-color: #fff;
+}
+.col-lg-8 {
+  grid-column: 1/3;
+  background-color: #fff;
+}
+.col-lg-3 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.team-heading,
+.csopes-heading,
+.timeline-heading,
+.primary-heading,
+.goals-heading {
+  padding: 8px 8px;
+  color: #1c7ed6;
+  border-bottom: 1px solid #ccc;
+  margin: 8px;
+}
+.team-list,
+.timeline-list,
+.primary-list,
+.goals-list {
+  padding: 24px;
+}
+.csopes-item,
+.team-item,
+.timeline-item,
+.primary-item,
+.goals-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.team-describe,
+.csopes-describe,
+.timeline-describe,
+.primary-describe,
+.goals-describe {
+  margin-left: 36px;
+}
+
+.timeline-item span {
+  flex: 0 0 40px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #f06595;
+  border-radius: 50%;
+  border: 1px solid #1c7ed6;
+}
+.bor-solid {
+  border-bottom: 1px solid #f1f3f5;
+}
+.bor-dottet {
+  border-bottom: 1px dotted #f1f3f5;
+}
+
+.team-icon {
+  width: 30px;
+}
+.primary-icon,
+.goals-icon {
+  width: 50px;
+  height: 50px;
+}
+.csopes-list {
+  display: flex;
+  padding: 24px;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    display: block;
+  }
+
+  .col-12 {
+    border-bottom: 12px solid #1c7ed6;
+  }
+
+  .csopes-item,
+  .team-item,
+  .timeline-item,
+  .primary-item,
+  .goals-item {
+    flex-direction: column;
+    align-items: start;
+  }
+  .team-icon,
+  .primary-icon,
+  .goals-icon {
+    margin-left: 50%;
+  }
+  .team-describe,
+  .csopes-describe,
+  .timeline-describe,
+  .primary-describe,
+  .goals-describe {
+    margin-left: 0;
+  }
+  .csopes-list {
+    flex-direction: column;
+  }
+}

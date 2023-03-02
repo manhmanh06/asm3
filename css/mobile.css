@@ -1,0 +1,48 @@
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #target,
+  #personal-info {
+    padding: 24px;
+  }
+
+  .nav-bar-img {
+    display: none;
+  }
+  .nav-bar-list {
+    flex-direction: column;
+  }
+
+  #nav-bar a,
+  .nav-bar-list a:last-child {
+    border: none;
+    text-align: left;
+    padding: 12px;
+  }
+  .certificate-item {
+    border-bottom: 1px solid #d6c08d;
+  }
+  .certificate-item3 {
+    border: none;
+  }
+
+  #footer li {
+    margin: 4px;
+  }
+  #footer span {
+    display: none;
+  }
+
+  .certificate-img {
+    width: 100%;
+  }
+  .certificate-item {
+    flex-direction: column;
+  }
+  .certificate-list::after,
+  .certificate-list::before {
+    display: none;
+  }
+}
